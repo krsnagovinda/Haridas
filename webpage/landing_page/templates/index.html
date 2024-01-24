@@ -1,0 +1,973 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home - Pagina de José Luís</title>
+{% endblock %}
+
+{% block navigation %}
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>Nombre Empresa</h1>
+                <span>.</span>
+            </a>
+
+            <!-- Nav Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#about">Acerca de nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolios</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#team">Bioconstrucción</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>                    
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav><!-- End Nav Menu -->
+
+            <a class="btn-getstarted" href="#about">Iniciar Sesión</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- Hero Section - Home Page -->
+        <section id="hero" class="hero">
+
+            <img src="{% static '/static/media/3dde7f22-3865-4e80-870d-c042978ed5bf.jpg' %}" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2 data-aos="fade-up" data-aos-delay="100">Bienvenido a mi Website</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">Somos una empresa constituida con más de dos décadas de experiencia laboral, con un equipo de profesionales en el ramo
+                        de la construcción, remodelacion, mantenimiento y equipamiento en todas las áreas, para tus proyectos a realizar.</p>
+                    </div>                    
+                </div>
+            </div>
+
+        </section><!-- End Hero Section -->
+{% endblock %}
+{% block header %}
+<!-- Clients Section - Home Page -->
+<section id="clients" class="clients">
+
+    <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+               <a href="http://www.craftsman.com">
+                    <img src="{% static '/static/logos/craftsman.png' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a href="http://www.bosch.com.mx">
+                    <img src="{% static '/static/logos/bosch.jpg' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a href="http://www.dupont.com.mx">
+                    <img src="{% static '/static/logos/dupont.png' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a href="http://www.dewalt.com.mx">
+                    <img src="{% static '/static/logos/dewalt.png' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a href="http://www.dremel.com.mx">
+                    <img src="{% static '/static/logos/dremel.jpg' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+                <a href="http://www.makita.com.mx">
+                    <img src="{% static '/static/logos/makita.jpg' %}" class="img-fluid" alt="">
+                </a>
+            </div><!-- End Client Item -->
+
+        </div>
+
+    </div>
+
+</section><!-- End Clients Section -->
+{% endblock %}
+
+{% block content %}
+<!-- About Section - Home Page -->
+<section id="about" class="about">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+            <div class="col-xl-5 content">
+                <h3>Acerca de nosotros</h3>                
+                <p>Somos un equipo talentoso de diseñadores y trabajadores especializdos en crear e innovar tus proyectos de construcción, diseño de mobiliario e interiores. 
+                   Damos mantemiento a tu hogar o negocio, contamos con servicios de remodelación y equipamiento a medida.
+                   También utilizamos las últimas técnicas y materiales para la bioconstrucción en cualquier tipo de terreno, cotiza con nosotros tus proyectos.</p>
+                
+            </div>
+
+            <div class="col-xl-7">
+                <div class="row gy-4 icon-boxes">
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box">
+                            <i class="bi bi-buildings"></i>
+                            <h3>Construcción en General</h3>
+                            <p>Una descripcion breve de lo que construyen</p>
+                        </div>
+                    </div> <!-- End Icon Box -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <i class="bi bi-clipboard-pulse"></i>
+                            <h3>Reparaciones y mantenimiento</h3>
+                            <p>descripcion breve de que tipo de mtto.</p>
+                        </div>
+                    </div> <!-- End Icon Box -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box">
+                            <i class="bi bi-command"></i>
+                            <h3>Diseño de mobiliario a medida</h3>
+                            <p>Descripcion</p>
+                        </div>
+                    </div> <!-- End Icon Box -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <h3>Bio-Construcción</h3>
+                            <p>descripcion</p>
+                        </div>
+                    </div> <!-- End Icon Box -->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section><!-- End About Section -->
+
+<!-- Stats Section - Home Page -->
+<section id="stats" class="stats">
+
+    <img src="{% static '/static/assets/img/stats-bg.jpg' %}" alt="" data-aos="fade-in">
+
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                    <p>Clientes</p>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                    <p>Projectos</p>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                    <p>Horas de trabajo</p>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                    <p>Staff</p>
+                </div>
+            </div><!-- End Stats Item -->
+
+        </div>
+
+    </div>
+
+</section><!-- End Stats Section -->
+
+<!-- Services Section - Home Page -->
+<section id="services" class="services">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Construcción</a>
+                        </h4>
+                        <p class="description">Descripcion de lo que construyen</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Diseño de mobiliario</a></h4>
+                        <p class="description">descrpcion</p>
+                    </div>
+                </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Diseño de interiores</a></h4>
+                        <p class="description">Descripcion</p>
+                    </div>
+                </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Mantenimmiento a hogares y negocios</a></h4>
+                        <p class="description">Descripcion</p>
+                    </div>
+                </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Remodelación</a>
+                        </h4>
+                        <p class="description">Descripcion</p>
+                    </div>
+                </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+                <div class="service-item d-flex">
+                    <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+                    <div>
+                        <h4 class="title"><a href="{% url 'services' %}" class="stretched-link">Equipamiento</a></h4>
+                        <p class="description">Descripcion</p>
+                    </div>
+                </div>
+            </div><!-- End Service Item -->
+
+        </div>
+
+    </div>
+
+</section><!-- End Services Section -->
+
+
+
+<!-- Portfolio Section - Home Page -->
+<section id="portfolio" class="portfolio">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Portafolios</h2>
+        <p>Alguna descripcion</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-mobi">Mobiliario y restauración</li>
+                <li data-filter=".filter-diseño">Diseño</li>
+                <li data-filter=".filter-constru">Construcción</li>
+                <li data-filter=".filter-mante">Mantenimimento</li>               
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobi">
+                    <img src="{% static '/static/media/mueble_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">                      
+                        <a href="{% static '/static/media/mueble_1.jpg' %}" title=""
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobi">
+                    <img src="{% static '/static/media/mueble_2.png' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/mueble_2.png' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-diseño">
+                    <img src="{% static '/static/media/rec1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/rec1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-constru">
+                    <img src="{% static '/static/media/desplante_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/desplante_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mante">
+                    <img src="{% static '/static/media/instalacion_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/instalacion_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mante">
+                    <img src="{% static '/static/media/casa_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/casa_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-constru">
+                    <img src="{% static '/static/media/ampliacion_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/ampliacion_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mante">
+                    <img src="{% static '/static/media/acabados_2.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/acabados_2.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-diseño">
+                    <img src="{% static '/static/media/closet_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/closet_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobi">
+                    <img src="{% static '/static/media/restaura_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/restaura_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-diseño">
+                    <img src="{% static '/static/media/antecomedor_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/antecomedor_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobi">
+                    <img src="{% static '/static/media/centro_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/centro_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-diseño">
+                    <img src="{% static '/static/media/closet_2.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/closet_2.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-diseño">
+                    <img src="{% static '/static/media/puerta_1.jpg' %}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <a href="{% static '/static/media/puerta_1.jpg' %}" title="" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+                </div><!-- End Portfolio Item -->             
+            </div><!-- End Portfolio Container -->
+       </div>
+    </div>
+</section><!-- End Portfolio Section -->
+
+<!-- Team Section - Home Page -->
+<section id="team" class="team">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestro Equipo de Trabajo</h2>
+        <p>Aqui va una descripcion del equipo y sus cuialificaciones</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>Walter White</h4>
+                    <span>Chief Executive Officer</span>
+                    <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum
+                        distinctio dire flow</p>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>Sarah Jhonson</h4>
+                    <span>Product Manager</span>
+                    <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores
+                        exercitationem ut</p>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>William Anderson</h4>
+                    <span>CTO</span>
+                    <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel
+                        tque sed facilis at qui</p>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                    <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam
+                        quasi quam consectetur</p>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-5.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>Brian Doe</h4>
+                    <span>Marketing</span>
+                    <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus
+                        quia impedit laborum velit</p>
+                </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+                <div class="member-img">
+                    <img src="{% static '/static/assets/img/team/team-6.jpg' %}" class="img-fluid" alt="">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info text-center">
+                    <h4>Josepha Palas</h4>
+                    <span>Operation</span>
+                    <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis
+                        fugit eligendi cupiditate vel</p>
+                </div>
+            </div><!-- End Team Member -->
+
+        </div>
+
+    </div>
+
+</section><!-- End Team Section -->
+
+<!-- Call-to-action Section - Home Page -->
+<section id="call-to-action" class="call-to-action">
+
+    <img src="{% static '/static/media/acabado_1.jpg' %}" alt="">
+
+    <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+                <div class="text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Call-to-action Section -->
+
+<!-- Testimonials Section - Home Page -->
+<section id="testimonials" class="testimonials">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+                <h3>Testimonios...Opcional !!</h3>
+                <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident.
+                </p>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="swiper">
+                    <template class="swiper-config">
+                        {
+                        "loop": true,
+                        "speed" : 600,
+                        "autoplay": {
+                        "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                        }
+                        }
+                    </template>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="d-flex">
+                                    <img src="{% static '/static/assets/img/testimonials/testimonials-1.jpg' %}"
+                                        class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Saul Goodman</h3>
+                                        <h4>Ceo & Founder</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                                        entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam
+                                        eget nibh et. Maecen aliquam, risus at semper.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="d-flex">
+                                    <img src="{% static '/static/assets/img/testimonials/testimonials-2.jpg' %}"
+                                        class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Sara Wilsson</h3>
+                                        <h4>Designer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem
+                                        cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
+                                        noster fugiat irure amet legam anim culpa.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="d-flex">
+                                    <img src="{% static '/static/assets/img/testimonials/testimonials-3.jpg' %}"
+                                        class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Jena Karlis</h3>
+                                        <h4>Store Owner</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum
+                                        nulla quem veniam duis minim tempor labore quem eram duis noster aute
+                                        amet eram fore quis sint minim.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="d-flex">
+                                    <img src="{% static '/static/assets/img/testimonials/testimonials-4.jpg' %}"
+                                        class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Matt Brandon</h3>
+                                        <h4>Freelancer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                                        export minim fugiat minim velit minim dolor enim duis veniam ipsum anim
+                                        magna sunt elit fore quem dolore labore illum veniam.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="d-flex">
+                                    <img src="{% static '/static/assets/img/testimonials/testimonials-5.jpg' %}"
+                                        class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>John Larson</h3>
+                                        <h4>Entrepreneur</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
+                                        tempor noster veniam enim culpa labore duis sunt culpa nulla illum
+                                        cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- End Testimonials Section -->
+
+<!-- Recent-posts Section - Home Page -->
+<section id="recent-posts" class="recent-posts">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Publicaciones recientes</h2>
+        <p>Breve descripción de nuestras actividades y trabajos recientes</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <article>
+
+                    <div class="post-img">
+                        <img src="{% static '/static/assets/img/blog/blog-1.jpg' %}" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Politics</p>
+
+                    <h2 class="title">
+                        <a href="{% url 'blog' %}">Dolorum optio tempore voluptas dignissimos</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <img src="{% static '/static/assets/img/blog/blog-author.jpg' %}" alt=""
+                            class="img-fluid post-author-img flex-shrink-0">
+                        <div class="post-meta">
+                            <p class="post-author">Maria Doe</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">Jan 1, 2022</time>
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <article>
+
+                    <div class="post-img">
+                        <img src="{% static '/static/assets/img/blog/blog-2.jpg' %}" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Sports</p>
+
+                    <h2 class="title">
+                        <a href="{% url 'blog' %}">Nisi magni odit consequatur autem nulla dolorem</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <img src="{% static '/static/assets/img/blog/blog-author-2.jpg' %}" alt=""
+                            class="img-fluid post-author-img flex-shrink-0">
+                        <div class="post-meta">
+                            <p class="post-author">Allisa Mayer</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">Jun 5, 2022</time>
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <article>
+
+                    <div class="post-img">
+                        <img src="{% static '/static/assets/img/blog/blog-3.jpg' %}" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Entertainment</p>
+
+                    <h2 class="title">
+                        <a href="{% url 'blog' %}">Possimus soluta ut id suscipit ea ut in quo quia et
+                            soluta</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <img src="{% static '/static/assets/img/blog/blog-author-3.jpg' %}" alt=""
+                            class="img-fluid post-author-img flex-shrink-0">
+                        <div class="post-meta">
+                            <p class="post-author">Mark Dower</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">Jun 22, 2022</time>
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+    </div>
+
+</section><!-- End Recent-posts Section -->
+
+<!-- Contact Section - Home Page -->
+<section id="contact" class="contact">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Si necesita cotizar o algun otro tipo de informe no dude en contactarnos, en breve nos pondremos en contacto con Ud.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6">
+
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <div class="info-item" data-aos="fade" data-aos-delay="200">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Dirección</h3>
+                            <p>A108 Adam Street</p>
+                            <p>Ciudad de México, 535022</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item" data-aos="fade" data-aos-delay="300">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Llámenos</h3>
+                            <p>+1 5589 55488 55</p>
+                            <p>+1 6678 254445 41</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item" data-aos="fade" data-aos-delay="400">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Correo Electŕonico</h3>
+                            <p>info@example.com</p>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="col-md-6">
+                        <div class="info-item" data-aos="fade" data-aos-delay="500">
+                            <i class="bi bi-clock"></i>
+                            <h3>Horarios de servicio</h3>
+                            <p>Lunes - Sábado</p>
+                            <p>9:00AM - 05:00PM</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                required></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+</section><!-- End Contact Section -->
+
+</main>
+{% endblock %}
+
+{% block footer %}
+<div class="container copyright text-center mt-4">
+    <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+       <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+</div>
+<!-- End Footer -->
+</footer>
+
+{% endblock %}
